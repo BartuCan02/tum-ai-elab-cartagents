@@ -1,6 +1,6 @@
 # CarthAgents — 1-minute pitch
 
-Slides: https://claude.ai/artifact/93iv3ZBmx2WuDT9FDcRjcN (private until shared from its Share menu; exports to .pptx / PDF).
+Slides: [`CarthAgents-pitch.pdf`](CarthAgents-pitch.pdf) (editable deck: https://claude.ai/artifact/93iv3ZBmx2WuDT9FDcRjcN, private until shared).
 
 ## 1 · The problem (0:00–0:15)
 **Slide:** "Every figure typed by hand. Every audit." — excerpts of a text PDF, an SAP print and a scan.
