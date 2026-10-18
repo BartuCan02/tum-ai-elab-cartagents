@@ -38,6 +38,9 @@ python -m carthagents.evaluate --data data/A3-Hackathon-Corpus --out outputs/eva
 python -m carthagents.scorer --keys data/A3-Hackathon-Corpus --pred outputs/eval [--report reports/<name>]
 ```
 
+The sample corpus is not part of the repository: place it at `data/A3-Hackathon-Corpus/` (and the template
+reference at `data/Arbeitsversion-merged-layout-20.xlsx`) to run the evaluation and the data-dependent tests.
+
 `evaluate` runs the same pipeline as the CLI on every document that has a `<doc_id>.key.json`, then prints the
 scorer tables by family, format and variant. The scorer (`carthagents.scorer`) reads only the Arbeitsversion
 workbooks and follows the challenge rules:
@@ -76,6 +79,22 @@ Folder in, then `pipeline.extract` per document (`readers` → `interpret` → `
 | `gt.py`, `scorer.py`, `oracle.py`, `evaluate.py` | Answer keys, scorer, oracle self-test, corpus evaluation |
 
 Decisions and the detailed plan: [`docs/PLAN.md`](docs/PLAN.md).
+
+## Status
+
+| Component | State on the sample corpus |
+|---|---|
+| Scorer | Oracle (keys written as workbooks) scores 29,610 / 29,610, 0 wrong |
+| xlsx reader | Reproduces every key cell (18 workbooks) |
+| PDF reader | Finds every printed value in text PDFs except planted cut-off columns; format detection 60/60 |
+| OCR | 97–100 % exact on clean scans/outlines; ~1 % misreads at the 0.95 confidence gate (fax scans unreliable) |
+| Number grammar | Parses all 29,676 printed amounts; glued numbers split only when exactly one split is valid |
+| Column vocabulary | 552 correct / 168 unknown / 0 wrong on the labelled header set (not yet leave-one-family-out) |
+| Checks | 0 false flags on perfect documents; 21 / 21 planted broken subtotals detected |
+| Interpreter | **Early stage**: asset rows only → 394 correct, **0 wrong**, rest blank (score +394 without OCR) |
+
+Next steps: subtotal/total/class/position rows, SAP block layouts, empty PDF cells as zero with column checks,
+header carry-over across pages, glued-number splitting in the interpreter, per-document timeout.
 
 ## Setup
 
