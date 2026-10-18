@@ -1,42 +1,60 @@
-"""Emit audit JSON and editable workbook with artifact_tool."""
+"""Write one document's results: a filled Arbeitsversion per fiscal year + one audit JSON.
+
+    <stem>_<year>_Arbeitsversion.xlsx   (scored; pointers in cell comments, flags under Offene Punkte)
+    <stem>_audit.json                   (one record per value, notes, summary)
+"""
+from __future__ import annotations
+
 import json
+import sys
+from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
-from artifact_tool import Workbook, SpreadsheetFile
-from .extract import Entry
 
-COLUMNS=["Identifier","Source label","AK Anfang (cents)","Zugang (cents)","Abgang (cents)","Umbuchung (cents)","AK Ende (cents)","AfA kumuliert (cents)","AfA Jahr (cents)","Buchwert Ende (cents)","Buchwert Vorjahr (cents)"]
-FIELD_COL={"ak_anfang":2,"zugang":3,"abgang":4,"umbuchung":5,"ak_ende":6,"afa_kumuliert":7,"afa_jahr":8,"buchwert_ende":9,"buchwert_vorjahr":10}
+from . import __version__
+from .arbeitsversion import output_name, write_workbook
+from .model import Extraction
 
-def save(source:Path, entries:list[Entry], issues:list[dict], dest:Path):
-    dest.mkdir(parents=True,exist_ok=True)
-    stem=source.stem
-    wb=Workbook.create()
-    sheets={"asset":wb.worksheets.add("Anlagenverzeichnis"),"class":wb.worksheets.add("Anlagengitter"),"subtotal":wb.worksheets.add("Totals and subtotals")}
-    for s in sheets.values():
-        s.get_range("A1:K1").values=[COLUMNS]
-        s.get_range("A1:K1").format={"fill":"#122042","font":{"bold":True,"color":"#FFFFFF"},"row_height":28}
-        s.get_range("A:A").format.column_width=20
-        s.get_range("B:B").format.column_width=42
-        s.get_range("C:K").format.column_width=21
-        s.freeze_panes.freeze_rows(1)
-    groups={k:{} for k in sheets}
-    for e in entries:
-        if e.kind not in groups or e.field not in FIELD_COL:continue
-        key=e.identifier
-        if key not in groups[e.kind]:groups[e.kind][key]=[key,e.row_label]+[None]*9
-        if e.status=="ok":groups[e.kind][key][FIELD_COL[e.field]]=e.value_cents
-    for kind,by_id in groups.items():
-        if by_id:
-            rows=list(by_id.values())
-            sheets[kind].get_range_by_indexes(1,0,len(rows),11).values=rows
-            sheets[kind].get_range(f"C2:K{len(rows)+1}").set_number_format("#,##0;[Red](#,##0)")
-    review=wb.worksheets.add("Review flags")
-    review.get_range("A1:D1").values=[["Identifier","Type","Issue","Detail"]]
-    review.get_range("A1:D1").format={"fill":"#122042","font":{"bold":True,"color":"#FFFFFF"}}
-    review.get_range("A:D").format.column_width=33
-    flagged=[[e.identifier,e.kind,e.field,e.reason] for e in entries if e.status!="ok"]
-    flagged += [[e.get("identifier"),e.get("kind"),e.get("check"),"Mismatch: source values left untouched"] for e in issues]
-    if flagged:review.get_range_by_indexes(1,0,len(flagged),4).values=flagged
-    SpreadsheetFile.export_xlsx(wb).save(str(dest/(stem+"_Arbeitsversion.xlsx")))
-    report={"source_file":source.name,"unit":"cents","schema_note":"Starter schema; map to official Arbeitsversion once provided","records":[e.dump() for e in entries],"checks":issues,"summary":{"mapped":sum(e.status=="ok" for e in entries),"flagged":sum(e.status!="ok" for e in entries),"inconsistencies":len(issues)}}
-    (dest/(stem+"_audit.json")).write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
+STATUSES = ("ok", "blank_flagged", "not_in_template")
+
+
+def audit_name(stem: str) -> str:
+    return f"{stem}_audit.json"
+
+
+def save(ex: Extraction, out_dir: Path, stem: str) -> dict:
+    """Write the outputs and return the audit dict (also written as JSON)."""
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    notes = list(ex.notes)
+    workbooks: dict[str, str] = {}
+    for yr in ex.years:
+        name = output_name(stem, yr.year)
+        try:
+            write_workbook(out_dir / name, yr.rows, yr.period_end, yr.open_points)
+            workbooks[str(yr.year)] = name
+        except Exception as exc:  # noqa: BLE001 - keep the other years and the JSON
+            notes.append(f"workbook {name} not written: {type(exc).__name__}: {exc}")
+    if not ex.years:
+        msg = "no fiscal year could be determined: no workbook written"
+        notes.append(msg)
+        print(f"{stem}: {msg}", file=sys.stderr)
+
+    counts = Counter(r.status for r in ex.records)
+    audit = {
+        "source": ex.source,
+        "format": ex.format,
+        "tool": {"name": "carthagents", "version": __version__},
+        "run_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "years": [yr.year for yr in ex.years],
+        "workbooks": workbooks,
+        "summary": {**{s: counts.get(s, 0) for s in STATUSES},
+                    **{s: n for s, n in counts.items() if s not in STATUSES},
+                    "records": len(ex.records),
+                    "open_points": sum(len(yr.open_points) for yr in ex.years)},
+        "notes": notes,
+        "records": [r.dump() for r in ex.records],
+    }
+    (out_dir / audit_name(stem)).write_text(json.dumps(audit, ensure_ascii=False, indent=1, default=str),
+                                            encoding="utf-8")
+    return audit
