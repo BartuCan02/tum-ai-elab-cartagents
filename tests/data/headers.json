@@ -1,0 +1,7416 @@
+[
+ {
+  "doc": "f00_demo_01",
+  "family": "f00",
+  "source": "xlsx",
+  "where": "Anlagenspiegel",
+  "period_end": "2025-12-31",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Anl.-Nr."
+    ],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "Bezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "01.01.2025"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Zugänge"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Abgänge"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Umbuchungen"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "31.12.2025"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Kumulierte Abschreibungen",
+     "01.01.2025"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Kumulierte Abschreibungen",
+     "Geschäftsjahr"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "Kumulierte Abschreibungen",
+     "Abgänge"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "Kumulierte Abschreibungen",
+     "Zuschreib."
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "Kumulierte Abschreibungen",
+     "31.12.2025"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "Buchwerte",
+     "31.12.2025"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "Buchwerte",
+     "31.12.2024"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   }
+  ]
+ },
+ {
+  "doc": "f00_demo_02",
+  "family": "f00",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 56.3,
+    "parts": [],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": 200.8,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 247.9,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 298.9,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 349.9,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": 400.9,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 451.9,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": 502.9,
+    "parts": [
+     "Kumulierte Abschreibungen"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": 553.9,
+    "parts": [
+     "Kumulierte Abschreibungen"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 604.9,
+    "parts": [
+     "Kumulierte Abschreibungen"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": 706.9,
+    "parts": [
+     "Kumulierte Abschreibungen"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": 757.9,
+    "parts": [
+     "Buchwerte"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": 808.9,
+    "parts": [
+     "Buchwerte"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   }
+  ]
+ },
+ {
+  "doc": "f00_demo_04",
+  "family": "f00",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 56.3,
+    "parts": [],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": 200.8,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 247.9,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 298.9,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 349.9,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": 400.9,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 451.9,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": 553.9,
+    "parts": [
+     "Kumulierte Abschreibungen"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 604.9,
+    "parts": [
+     "Kumulierte Abschreibungen"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": 706.9,
+    "parts": [
+     "Buchwerte"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": 808.9,
+    "parts": [
+     "Buchwerte"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   }
+  ]
+ },
+ {
+  "doc": "f01_net_spiegel_02",
+  "family": "f01",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 83.9,
+    "parts": [],
+    "expected": "account",
+    "evidence": "key:account"
+   },
+   {
+    "key": 159.7,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 292.9,
+    "parts": [
+     "Vorjahr",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 348.9,
+    "parts": [
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 404.9,
+    "parts": [
+     "Zinsen",
+     "Fremdkapital",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 460.9,
+    "parts": [
+     "Minderungen",
+     "Geschäftsjahr",
+     "(-)EUR"
+    ],
+    "expected": "abgang_bw",
+    "evidence": "key:abgang_bw"
+   },
+   {
+    "key": 516.9,
+    "parts": [
+     "Geschäftsjahr",
+     "(+/-)EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 572.9,
+    "parts": [
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 628.9,
+    "parts": [
+     "Geschäftsjahr",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 684.9,
+    "parts": [
+     "Geschäftsjahr",
+     "EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 740.9,
+    "parts": [
+     "(kumuliert)",
+     "(-)EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": 796.9,
+    "parts": [
+     "31.12.",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f01_net_spiegel_03",
+  "family": "f01",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 83.9,
+    "parts": [],
+    "expected": "account",
+    "evidence": "key:account"
+   },
+   {
+    "key": 196.3,
+    "parts": [],
+    "expected": null,
+    "evidence": "key:class_no|name"
+   },
+   {
+    "key": 292.9,
+    "parts": [
+     "Vorjahr",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 348.9,
+    "parts": [
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 404.9,
+    "parts": [
+     "Zinsen",
+     "Fremdkapital",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 460.9,
+    "parts": [
+     "Minderungen",
+     "Geschäftsjahr",
+     "(-)EUR"
+    ],
+    "expected": "abgang_bw",
+    "evidence": "key:abgang_bw"
+   },
+   {
+    "key": 516.9,
+    "parts": [
+     "Geschäftsjahr",
+     "(+/-)EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 572.9,
+    "parts": [
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 628.9,
+    "parts": [
+     "Geschäftsjahr",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 684.9,
+    "parts": [
+     "Geschäftsjahr",
+     "EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 740.9,
+    "parts": [
+     "(kumuliert)",
+     "(-)EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": 796.9,
+    "parts": [
+     "31.12.",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f01_net_spiegel_04",
+  "family": "f01",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 127.6,
+    "parts": [
+     "Konto / Bezeichnung"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 243.6,
+    "parts": [
+     "Restbuchwert",
+     "01.01.2025"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 289.6,
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 335.6,
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 381.6,
+    "parts": [
+     "Abgang zum",
+     "Restbuchwert"
+    ],
+    "expected": "abgang_bw",
+    "evidence": "key:abgang_bw"
+   },
+   {
+    "key": 426.0,
+    "parts": [
+     "Zuschreibung"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 473.6,
+    "parts": [
+     "Abschreibung",
+     "lfd. Jahr"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 519.6,
+    "parts": [
+     "Restbuchwert",
+     "31.12.2025"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": 565.6,
+    "parts": [
+     "kumulierte",
+     "Abschreibung"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   }
+  ]
+ },
+ {
+  "doc": "f01_net_spiegel_06",
+  "family": "f01",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2",
+  "columns": [
+   {
+    "key": 83.9,
+    "parts": [],
+    "expected": "account",
+    "evidence": "key:account"
+   },
+   {
+    "key": 196.3,
+    "parts": [],
+    "expected": null,
+    "evidence": "key:class_no|name"
+   },
+   {
+    "key": 292.9,
+    "parts": [
+     "Vorjahr",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 348.9,
+    "parts": [
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 404.9,
+    "parts": [
+     "Zinsen",
+     "Fremdkapital",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 460.9,
+    "parts": [
+     "Minderungen",
+     "Geschäftsjahr",
+     "(-)EUR"
+    ],
+    "expected": "abgang_bw",
+    "evidence": "key:abgang_bw"
+   },
+   {
+    "key": 516.9,
+    "parts": [
+     "Geschäftsjahr",
+     "(+/-)EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 572.9,
+    "parts": [
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 628.9,
+    "parts": [
+     "Geschäftsjahr",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 684.9,
+    "parts": [
+     "Geschäftsjahr",
+     "EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 796.9,
+    "parts": [
+     "(kumuliert) 31.12.",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": 725.4,
+    "parts": [
+     "(-)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f01_net_spiegel_07",
+  "family": "f01",
+  "source": "xlsx",
+  "where": "Netto-Anlagespiegel",
+  "period_end": "2025-12-31",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Bilanzposition"
+    ],
+    "expected": "position",
+    "evidence": "manual"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "Buchwert Vorjahr",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Zugänge, Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "davon aktivierte Zinsen Fremdkapital",
+     "(+)EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Abgänge / Minderungen Geschäftsjahr",
+     "(-)EUR"
+    ],
+    "expected": "abgang_bw",
+    "evidence": "key:abgang_bw"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Umbuchungen Geschäftsjahr",
+     "(+/-)EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Zuschreibungen Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Normal-AfA Geschäftsjahr",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Sonder-AfA Geschäftsjahr",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "Abschreibungen (kumuliert)",
+     "(-)EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "Buchwert 31.12.",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f01_net_spiegel_08",
+  "family": "f01",
+  "source": "pdf",
+  "period_end": "2024-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 83.9,
+    "parts": [],
+    "expected": "account",
+    "evidence": "key:account"
+   },
+   {
+    "key": 196.3,
+    "parts": [],
+    "expected": null,
+    "evidence": "key:class_no|name"
+   },
+   {
+    "key": 292.9,
+    "parts": [
+     "Vorjahr",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 348.9,
+    "parts": [
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 404.9,
+    "parts": [
+     "Zinsen",
+     "Fremdkapital",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 460.9,
+    "parts": [
+     "Minderungen",
+     "Geschäftsjahr",
+     "(-)EUR"
+    ],
+    "expected": "abgang_bw",
+    "evidence": "key:abgang_bw"
+   },
+   {
+    "key": 516.9,
+    "parts": [
+     "Geschäftsjahr",
+     "(+/-)EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 572.9,
+    "parts": [
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 628.9,
+    "parts": [
+     "Geschäftsjahr",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 684.9,
+    "parts": [
+     "Geschäftsjahr",
+     "EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 740.9,
+    "parts": [
+     "(kumuliert)",
+     "(-)EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": 796.9,
+    "parts": [
+     "31.12.",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f02_asset_spiegel_01",
+  "family": "f02",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 183.0,
+    "parts": [
+     "Inventar- Inventar-",
+     "Nummer Bezeichnung"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 234.2,
+    "parts": [
+     "Anschaff.",
+     "Datum"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 250.6,
+    "parts": [
+     "AfA",
+     "Art"
+    ],
+    "expected": "method",
+    "evidence": "manual"
+   },
+   {
+    "key": 264.9,
+    "parts": [
+     "ND"
+    ],
+    "expected": "useful_life",
+    "evidence": "key:useful_life"
+   },
+   {
+    "key": 319.9,
+    "parts": [
+     "Anschaff.-/",
+     "Herstellungs-",
+     "kosten (hist.)",
+     "EUR"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 374.9,
+    "parts": [
+     "Zugänge, davon",
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 429.9,
+    "parts": [
+     "aktivierte",
+     "Zinsen",
+     "Fremdkapital",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 484.9,
+    "parts": [
+     "Abgänge /",
+     "Minderungen",
+     "Geschäftsjahr",
+     "(-)EUR"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": 539.9,
+    "parts": [
+     "Umbuchungen",
+     "Geschäftsjahr",
+     "(+/-)EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 594.9,
+    "parts": [
+     "Zuschreibungen",
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 649.9,
+    "parts": [
+     "Abschreibungen",
+     "Geschäftsjahr",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 704.9,
+    "parts": [
+     "Buchwert",
+     "Vorjahr",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 759.9,
+    "parts": [
+     "Abschreibungen",
+     "(kumuliert)",
+     "(-)EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": 814.9,
+    "parts": [
+     "Buchwert",
+     "31.12.",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f02_asset_spiegel_02",
+  "family": "f02",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 176.4,
+    "parts": [
+     "Inventar- Inventar-",
+     "Nummer Bezeichnung"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 234.2,
+    "parts": [
+     "Anschaff.",
+     "Datum"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 250.6,
+    "parts": [
+     "AfA",
+     "Art"
+    ],
+    "expected": "method",
+    "evidence": "manual"
+   },
+   {
+    "key": 264.9,
+    "parts": [
+     "ND"
+    ],
+    "expected": "useful_life",
+    "evidence": "key:useful_life"
+   },
+   {
+    "key": 319.9,
+    "parts": [
+     "Anschaff.-/",
+     "Herstellungs-",
+     "kosten (hist.)",
+     "EUR"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 374.9,
+    "parts": [
+     "Zugänge, davon",
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 429.9,
+    "parts": [
+     "aktivierte",
+     "Zinsen",
+     "Fremdkapital",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 484.9,
+    "parts": [
+     "Abgänge /",
+     "Minderungen",
+     "Geschäftsjahr",
+     "(-)EUR"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": 539.9,
+    "parts": [
+     "Umbuchungen",
+     "Geschäftsjahr",
+     "(+/-)EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 594.9,
+    "parts": [
+     "Zuschreibungen",
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 649.9,
+    "parts": [
+     "Abschreibungen",
+     "Geschäftsjahr",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 704.9,
+    "parts": [
+     "Buchwert",
+     "Vorjahr",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 759.9,
+    "parts": [
+     "Abschreibungen",
+     "(kumuliert)",
+     "(-)EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": 814.9,
+    "parts": [
+     "Buchwert",
+     "31.12.",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f02_asset_spiegel_03",
+  "family": "f02",
+  "source": "xlsx",
+  "where": "Anlagespiegel",
+  "period_end": "2025-12-31",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Inventar- Nummer"
+    ],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "Inventar- Bezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Anschaff. Datum"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "AfA Art"
+    ],
+    "expected": "method",
+    "evidence": "manual"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "ND"
+    ],
+    "expected": "useful_life",
+    "evidence": "key:useful_life"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Anschaff.-/ Herstellungs- kosten (hist.)",
+     "EUR"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Zugänge, Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "davon aktivierte Zinsen Fremdkapital",
+     "(+)EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Abgänge / Minderungen Geschäftsjahr",
+     "(-)EUR"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "Umbuchungen Geschäftsjahr",
+     "(+/-)EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "Zuschreibungen Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "Abschreibungen Geschäftsjahr",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "Buchwert Vorjahr",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "Abschreibungen (kumuliert)",
+     "(-)EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "Buchwert 31.12.",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f02_asset_spiegel_05",
+  "family": "f02",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 49.7,
+    "parts": [
+     "Konto"
+    ],
+    "expected": "account",
+    "evidence": "key:account"
+   },
+   {
+    "key": 82.9,
+    "parts": [
+     "Inv.-Nr."
+    ],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": 90.1,
+    "parts": [
+     "UNr"
+    ],
+    "expected": "sub_no",
+    "evidence": "key:sub_no"
+   },
+   {
+    "key": 221.9,
+    "parts": [
+     "Bezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 269.7,
+    "parts": [
+     "Akt.-Datum"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 288.9,
+    "parts": [
+     "ND"
+    ],
+    "expected": "useful_life",
+    "evidence": "key:useful_life"
+   },
+   {
+    "key": 307.3,
+    "parts": [
+     "Methode"
+    ],
+    "expected": "method",
+    "evidence": "key:method"
+   },
+   {
+    "key": 372.9,
+    "parts": [
+     "AHK",
+     "01.01.2025"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 412.6,
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 466.6,
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 527.0,
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 588.9,
+    "parts": [
+     "AHK",
+     "31.12.2025"
+    ],
+    "expected": null,
+    "evidence": "key:ahk_close|zugang"
+   },
+   {
+    "key": 642.9,
+    "parts": [
+     "AfA",
+     "lfd. Jahr"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 696.9,
+    "parts": [
+     "AfA kum.",
+     "31.12.2025"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": 750.9,
+    "parts": [
+     "Restbuchwert",
+     "31.12.2025"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": 804.9,
+    "parts": [
+     "Restbuchwert",
+     "31.12.2024"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   }
+  ]
+ },
+ {
+  "doc": "f02_asset_spiegel_07",
+  "family": "f02",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 191.1,
+    "parts": [
+     "Inventar- Inventar-",
+     "Nummer Bezeichnung"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 234.2,
+    "parts": [
+     "Anschaff.",
+     "Datum"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 250.6,
+    "parts": [
+     "AfA",
+     "Art"
+    ],
+    "expected": "method",
+    "evidence": "manual"
+   },
+   {
+    "key": 264.9,
+    "parts": [
+     "ND"
+    ],
+    "expected": "useful_life",
+    "evidence": "key:useful_life"
+   },
+   {
+    "key": 319.9,
+    "parts": [
+     "Anschaff.-/",
+     "Herstellungs-",
+     "kosten (hist.)",
+     "EUR"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 374.9,
+    "parts": [
+     "Zugänge, davon",
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 429.9,
+    "parts": [
+     "aktivierte",
+     "Zinsen",
+     "Fremdkapital",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 484.9,
+    "parts": [
+     "Abgänge /",
+     "Minderungen",
+     "Geschäftsjahr",
+     "(-)EUR"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": 539.9,
+    "parts": [
+     "Umbuchungen",
+     "Geschäftsjahr",
+     "(+/-)EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 594.9,
+    "parts": [
+     "Zuschreibungen",
+     "Geschäftsjahr",
+     "(+)EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 704.9,
+    "parts": [
+     "Abschreibungen Buchwert",
+     "Geschäftsjahr Vorjahr",
+     "EUR EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 759.9,
+    "parts": [
+     "Abschreibungen",
+     "(kumuliert)",
+     "(-)EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": 814.9,
+    "parts": [
+     "Buchwert",
+     "31.12.",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f03_block_spiegel_01",
+  "family": "f03",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 64.7,
+    "parts": [
+     "Bezeichnung"
+    ],
+    "expected": "?",
+    "evidence": "key:asset_no (header misaligned with data)"
+   },
+   {
+    "key": 276.8,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 327.0,
+    "parts": [],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 379.0,
+    "parts": [
+     "Entwicklung",
+     "der"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 463.0,
+    "parts": [
+     "Stand zum",
+     "01.01.2025",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:ahk_open|bw_prev|kum_afa_open"
+   },
+   {
+    "key": 548.0,
+    "parts": [
+     "Zugang",
+     "Abgang-",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:abgang|abgang_bw|afa_abgang|zugang"
+   },
+   {
+    "key": 630.0,
+    "parts": [
+     "Umbuchung",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 714.0,
+    "parts": [
+     "Abschreibung",
+     "Zuschreibung-",
+     "EUR"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": 800.0,
+    "parts": [
+     "Stand zum",
+     "31.12.2025",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:ahk_close|bw_close|kum_afa_close"
+   }
+  ]
+ },
+ {
+  "doc": "f03_block_spiegel_02",
+  "family": "f03",
+  "source": "xlsx",
+  "where": "Kontenübersicht",
+  "period_end": "2024-12-31",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Bezeichnung"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Entwicklung",
+     "der"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Stand zum",
+     "01.01.2024",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:ahk_open|bw_prev|kum_afa_open"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Zugang",
+     "Abgang-",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:abgang|afa_abgang|afa_gj|zugang"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Umbuchung",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Abschreibung",
+     "Zuschreibung-",
+     "EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Stand zum",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:ahk_close|bw_close|kum_afa_close"
+   }
+  ]
+ },
+ {
+  "doc": "f03_block_spiegel_02",
+  "family": "f03",
+  "source": "xlsx",
+  "where": "Anlagen",
+  "period_end": "2024-12-31",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Bezeichnung"
+    ],
+    "expected": "?",
+    "evidence": "key:asset_no (header misaligned with data)"
+   },
+   {
+    "key": "B",
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Datum",
+     "AfA-Art",
+     "ND  %"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Entw.",
+     "der"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Stand zum",
+     "01.01.2024",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:ahk_open|bw_prev|kum_afa_open"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Zugang",
+     "Abgang-",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:abgang|afa_abgang|afa_gj|zugang"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Umbuchung",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Abschreibung",
+     "Zuschreibung-",
+     "EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Stand zum",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:ahk_close|bw_close|kum_afa_close"
+   }
+  ]
+ },
+ {
+  "doc": "f03_block_spiegel_05",
+  "family": "f03",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 64.7,
+    "parts": [
+     "Bezeichnung"
+    ],
+    "expected": "?",
+    "evidence": "key:asset_no (header misaligned with data)"
+   },
+   {
+    "key": 281.3,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 327.0,
+    "parts": [],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 379.0,
+    "parts": [
+     "Entwicklung",
+     "der"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 463.0,
+    "parts": [
+     "Stand zum",
+     "01.01.2025",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:ahk_open|bw_prev|kum_afa_open"
+   },
+   {
+    "key": 548.0,
+    "parts": [
+     "Zugang",
+     "Abgang-",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:abgang|abgang_bw|afa_abgang|zugang"
+   },
+   {
+    "key": 630.0,
+    "parts": [
+     "Umbuchung",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 714.0,
+    "parts": [
+     "Abschreibung",
+     "Zuschreibung-",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:afa_gj|zuschreibung"
+   },
+   {
+    "key": 800.0,
+    "parts": [
+     "Stand zum",
+     "31.12.2025",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:ahk_close|bw_close|kum_afa_close"
+   }
+  ]
+ },
+ {
+  "doc": "f03_block_spiegel_06",
+  "family": "f03",
+  "source": "pdf",
+  "period_end": "2024-12-31",
+  "where": "p2",
+  "columns": [
+   {
+    "key": 64.7,
+    "parts": [
+     "Bezeichnung"
+    ],
+    "expected": "?",
+    "evidence": "key:asset_no (header misaligned with data)"
+   },
+   {
+    "key": 278.8,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 327.0,
+    "parts": [],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 379.0,
+    "parts": [
+     "Entwicklung",
+     "der"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 463.0,
+    "parts": [
+     "Stand zum",
+     "01.01.2024",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:ahk_open|bw_prev|kum_afa_open"
+   },
+   {
+    "key": 548.0,
+    "parts": [
+     "Zugang",
+     "Abgang-",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:abgang|abgang_bw|afa_abgang|zugang"
+   },
+   {
+    "key": 630.0,
+    "parts": [
+     "Umbuchung",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 714.0,
+    "parts": [
+     "Abschreibung",
+     "Zuschreibung-",
+     "EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 800.0,
+    "parts": [
+     "Stand zum",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:ahk_close|bw_close|kum_afa_close"
+   }
+  ]
+ },
+ {
+  "doc": "f03_block_spiegel_07",
+  "family": "f03",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 49.4,
+    "parts": [
+     "Anlagegut"
+    ],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": 168.4,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 213.0,
+    "parts": [],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 262.0,
+    "parts": [
+     "Wertart"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 323.0,
+    "parts": [
+     "Anfangsstand",
+     "01.01.2025",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:ahk_open|bw_prev|kum_afa_open"
+   },
+   {
+    "key": 385.0,
+    "parts": [
+     "Zugänge",
+     "Abgänge (-)",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:abgang|abgang_bw|afa_abgang|zugang"
+   },
+   {
+    "key": 447.0,
+    "parts": [
+     "Umbuchungen",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 509.0,
+    "parts": [
+     "AfA lfd. Jahr",
+     "Zuschreib. (-)",
+     "EUR"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": 571.0,
+    "parts": [
+     "Endstand",
+     "31.12.2025",
+     "EUR"
+    ],
+    "expected": null,
+    "evidence": "key:ahk_close|bw_close|kum_afa_close"
+   }
+  ]
+ },
+ {
+  "doc": "f04_verzeichnis_01",
+  "family": "f04",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 89.3,
+    "parts": [
+     "Inventar-",
+     "Nummer"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 230.5,
+    "parts": [
+     "Inventar-",
+     "Bezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 264.0,
+    "parts": [
+     "Kosten-",
+     "stelle"
+    ],
+    "expected": "cost_center",
+    "evidence": "manual"
+   },
+   {
+    "key": 342.0,
+    "parts": [
+     "AHK",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": 383.5,
+    "parts": [
+     "Anschaff.",
+     "Datum"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 400.5,
+    "parts": [
+     "AfA",
+     "Art"
+    ],
+    "expected": "method",
+    "evidence": "manual"
+   },
+   {
+    "key": 412.2,
+    "parts": [
+     "ND"
+    ],
+    "expected": "useful_life",
+    "evidence": "key:useful_life"
+   },
+   {
+    "key": 514.0,
+    "parts": [
+     "Buchwert",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": 547.2,
+    "parts": [
+     "Datum des",
+     "Abgangs"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f04_verzeichnis_02",
+  "family": "f04",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 90.3,
+    "parts": [
+     "Inventar-",
+     "Nummer"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 230.9,
+    "parts": [
+     "Inventar-",
+     "Bezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 264.0,
+    "parts": [
+     "Kosten-",
+     "stelle"
+    ],
+    "expected": "cost_center",
+    "evidence": "manual"
+   },
+   {
+    "key": 342.0,
+    "parts": [
+     "AHK",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": 383.5,
+    "parts": [
+     "Anschaff.",
+     "Datum"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 400.5,
+    "parts": [
+     "AfA",
+     "Art"
+    ],
+    "expected": "method",
+    "evidence": "manual"
+   },
+   {
+    "key": 412.2,
+    "parts": [
+     "ND"
+    ],
+    "expected": "useful_life",
+    "evidence": "key:useful_life"
+   },
+   {
+    "key": 514.0,
+    "parts": [
+     "Buchwert",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": 551.9,
+    "parts": [
+     "Datum des",
+     "Abgangs"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f04_verzeichnis_03",
+  "family": "f04",
+  "source": "xlsx",
+  "where": "Anlageverzeichnis",
+  "period_end": "2024-12-31",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Inventar-",
+     "Nummer"
+    ],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "Inventar-",
+     "Bezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Kosten-",
+     "stelle"
+    ],
+    "expected": "cost_center",
+    "evidence": "manual"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "AHK",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Anschaff.",
+     "Datum"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "AfA",
+     "Art"
+    ],
+    "expected": "method",
+    "evidence": "manual"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "ND"
+    ],
+    "expected": "useful_life",
+    "evidence": "key:useful_life"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Buchwert",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Datum des",
+     "Abgangs"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f04_verzeichnis_06",
+  "family": "f04",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 89.3,
+    "parts": [
+     "Inventar-",
+     "Nummer"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 225.9,
+    "parts": [
+     "Inventar-",
+     "Bezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 264.0,
+    "parts": [
+     "Kosten-",
+     "stelle"
+    ],
+    "expected": "cost_center",
+    "evidence": "manual"
+   },
+   {
+    "key": 342.0,
+    "parts": [
+     "AHK",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": 383.5,
+    "parts": [
+     "Anschaff.",
+     "Datum"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 400.5,
+    "parts": [
+     "AfA",
+     "Art"
+    ],
+    "expected": "method",
+    "evidence": "manual"
+   },
+   {
+    "key": 412.2,
+    "parts": [
+     "ND"
+    ],
+    "expected": "useful_life",
+    "evidence": "key:useful_life"
+   },
+   {
+    "key": 514.0,
+    "parts": [
+     "Buchwert",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": 547.2,
+    "parts": [
+     "Datum des",
+     "Abgangs"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f04_verzeichnis_07",
+  "family": "f04",
+  "source": "pdf",
+  "period_end": "2024-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 90.3,
+    "parts": [
+     "Inventar-",
+     "Nummer"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 231.7,
+    "parts": [
+     "Inventar-",
+     "Bezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 264.0,
+    "parts": [
+     "Kosten-",
+     "stelle"
+    ],
+    "expected": "cost_center",
+    "evidence": "manual"
+   },
+   {
+    "key": 342.0,
+    "parts": [
+     "AHK",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": 383.5,
+    "parts": [
+     "Anschaff.",
+     "Datum"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 400.5,
+    "parts": [
+     "AfA",
+     "Art"
+    ],
+    "expected": "method",
+    "evidence": "manual"
+   },
+   {
+    "key": 412.2,
+    "parts": [
+     "ND"
+    ],
+    "expected": "useful_life",
+    "evidence": "key:useful_life"
+   },
+   {
+    "key": 514.0,
+    "parts": [
+     "Buchwert",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": 547.2,
+    "parts": [
+     "Datum des",
+     "Abgangs"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f04_verzeichnis_08",
+  "family": "f04",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 57.5,
+    "parts": [
+     "Anlage-",
+     "Nr."
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 233.0,
+    "parts": [
+     "Bezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 282.5,
+    "parts": [
+     "Zugang",
+     "am"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 319.0,
+    "parts": [
+     "Nutzungs-",
+     "dauer"
+    ],
+    "expected": "useful_life",
+    "evidence": "key:useful_life"
+   },
+   {
+    "key": 335.5,
+    "parts": [
+     "AfA-",
+     "Methode"
+    ],
+    "expected": "method",
+    "evidence": "manual"
+   },
+   {
+    "key": 423.0,
+    "parts": [
+     "Anschaffungs-",
+     "wert EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": 493.0,
+    "parts": [
+     "Rest-",
+     "buchwert EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": 528.0,
+    "parts": [
+     "Abgang",
+     "am"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 557.0,
+    "parts": [
+     "KSt"
+    ],
+    "expected": "cost_center",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_01",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2#line0",
+  "columns": [
+   {
+    "key": 48.3,
+    "parts": [
+     "BuKr GsBe"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 126.6,
+    "parts": [
+     "BilanzPos"
+    ],
+    "expected": "position",
+    "evidence": "manual"
+   },
+   {
+    "key": 180.3,
+    "parts": [
+     "BestKtoAHK"
+    ],
+    "expected": "account",
+    "evidence": "key:account"
+   },
+   {
+    "key": 246.3,
+    "parts": [
+     "Klasse"
+    ],
+    "expected": "class_no",
+    "evidence": "key:class_no"
+   },
+   {
+    "key": 373.5,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 440.2,
+    "parts": [
+     "Währg"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_01",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2#line1",
+  "columns": [
+   {
+    "key": 89.9,
+    "parts": [
+     "AHK GJ-Beg"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 155.9,
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 221.9,
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 287.9,
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 353.9,
+    "parts": [
+     "Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 419.9,
+    "parts": [
+     "Invest.Förderg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 485.9,
+    "parts": [
+     "aktuelle AHK"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_01",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2#line2",
+  "columns": [
+   {
+    "key": 94.0,
+    "parts": [
+     "AfA GJ-Beg"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": 160.0,
+    "parts": [
+     "AfA des Jahres"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 221.9,
+    "parts": [
+     "AfA Abgang"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": 287.9,
+    "parts": [
+     "AfA Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 353.9,
+    "parts": [
+     "AfA Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 419.9,
+    "parts": [
+     "Zuschreibungen"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 490.0,
+    "parts": [
+     "kumulierte AfA"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_01",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2#line3",
+  "columns": [
+   {
+    "key": 89.9,
+    "parts": [
+     "Buchwrt GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 485.9,
+    "parts": [
+     "lfd Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_02",
+  "family": "f05",
+  "source": "xlsx",
+  "where": "Anlagengitter#line0",
+  "period_end": "2025-12-31",
+  "columns": [
+   {
+    "key": "B",
+    "parts": [
+     "BuKr GsBe"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "BilanzPos"
+    ],
+    "expected": "position",
+    "evidence": "manual"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "BestKtoAHK"
+    ],
+    "expected": "account",
+    "evidence": "manual"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Klasse"
+    ],
+    "expected": "class_no",
+    "evidence": "manual"
+   },
+   {
+    "key": "F",
+    "parts": [],
+    "expected": "name",
+    "evidence": "key"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Währg"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_02",
+  "family": "f05",
+  "source": "xlsx",
+  "where": "Anlagengitter#line1",
+  "period_end": "2025-12-31",
+  "columns": [
+   {
+    "key": "B",
+    "parts": [
+     "AHK GJ-Beg"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "abgang",
+    "evidence": "key"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Invest.Förderg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "aktuelle AHK"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_02",
+  "family": "f05",
+  "source": "xlsx",
+  "where": "Anlagengitter#line2",
+  "period_end": "2025-12-31",
+  "columns": [
+   {
+    "key": "B",
+    "parts": [
+     "AfA GJ-Beg"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "AfA des Jahres"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "AfA Abgang"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "AfA Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "AfA Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Zuschreibungen"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "kumulierte AfA"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_02",
+  "family": "f05",
+  "source": "xlsx",
+  "where": "Anlagengitter#line3",
+  "period_end": "2025-12-31",
+  "columns": [
+   {
+    "key": "B",
+    "parts": [
+     "Buchwrt GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "lfd Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_05",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2#line0",
+  "columns": [
+   {
+    "key": 48.3,
+    "parts": [
+     "BuKr GsBe"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 126.6,
+    "parts": [
+     "BilanzPos"
+    ],
+    "expected": "position",
+    "evidence": "manual"
+   },
+   {
+    "key": 180.3,
+    "parts": [
+     "BestKtoAHK"
+    ],
+    "expected": "account",
+    "evidence": "key:account"
+   },
+   {
+    "key": 246.3,
+    "parts": [
+     "Klasse"
+    ],
+    "expected": "class_no",
+    "evidence": "key:class_no"
+   },
+   {
+    "key": 357.2,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 440.2,
+    "parts": [
+     "Währg"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_05",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2#line1",
+  "columns": [
+   {
+    "key": 89.9,
+    "parts": [
+     "AHK GJ-Beg"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 155.9,
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 221.9,
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 287.9,
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 353.9,
+    "parts": [
+     "Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 419.9,
+    "parts": [
+     "Invest.Förderg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 473.7,
+    "parts": [
+     "aktuelle"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_05",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2#line2",
+  "columns": [
+   {
+    "key": 94.0,
+    "parts": [
+     "AfA GJ-Beg"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": 160.0,
+    "parts": [
+     "AfA des Jahres"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 221.9,
+    "parts": [
+     "AfA Abgang"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": 287.9,
+    "parts": [
+     "AfA Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 353.9,
+    "parts": [
+     "AfA Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 419.9,
+    "parts": [
+     "Zuschreibungen"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": 473.7,
+    "parts": [
+     "kumulierte"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_05",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2#line3",
+  "columns": [
+   {
+    "key": 89.9,
+    "parts": [
+     "Buchwrt GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 473.7,
+    "parts": [
+     "lfd Buch"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_06",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2#line0",
+  "columns": [
+   {
+    "key": 48.3,
+    "parts": [
+     "BuKr GsBe"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 126.6,
+    "parts": [
+     "BilanzPos"
+    ],
+    "expected": "position",
+    "evidence": "manual"
+   },
+   {
+    "key": 180.3,
+    "parts": [
+     "BestKtoAHK"
+    ],
+    "expected": "account",
+    "evidence": "key:account"
+   },
+   {
+    "key": 246.3,
+    "parts": [
+     "Klasse"
+    ],
+    "expected": "class_no",
+    "evidence": "key:class_no"
+   },
+   {
+    "key": 357.2,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 444.3,
+    "parts": [
+     "Währg"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_06",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2#line1",
+  "columns": [
+   {
+    "key": 89.9,
+    "parts": [
+     "AHK GJ-Beg"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 155.9,
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 221.9,
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 287.9,
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 353.9,
+    "parts": [
+     "Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 419.9,
+    "parts": [
+     "Invest.Förderg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 485.9,
+    "parts": [
+     "aktuelle AHK"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_06",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2#line2",
+  "columns": [
+   {
+    "key": 94.0,
+    "parts": [
+     "AfA GJ-Beg"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": 160.0,
+    "parts": [
+     "AfA des Jahres"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 221.9,
+    "parts": [
+     "AfA Abgang"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": 287.9,
+    "parts": [
+     "AfA Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 353.9,
+    "parts": [
+     "AfA Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 419.9,
+    "parts": [
+     "Zuschreibungen"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": 490.0,
+    "parts": [
+     "kumulierte AfA"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_06",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2#line3",
+  "columns": [
+   {
+    "key": 89.9,
+    "parts": [
+     "Buchwrt GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 485.9,
+    "parts": [
+     "lfd Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_07",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-06-30",
+  "where": "p2#line0",
+  "columns": [
+   {
+    "key": 48.3,
+    "parts": [
+     "BuKr GsBe"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 126.6,
+    "parts": [
+     "BilanzPos"
+    ],
+    "expected": "position",
+    "evidence": "manual"
+   },
+   {
+    "key": 180.3,
+    "parts": [
+     "BestKtoAHK"
+    ],
+    "expected": "account",
+    "evidence": "key:account"
+   },
+   {
+    "key": 246.3,
+    "parts": [
+     "Klasse"
+    ],
+    "expected": "class_no",
+    "evidence": "key:class_no"
+   },
+   {
+    "key": 373.5,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 440.2,
+    "parts": [
+     "Währg"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_07",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-06-30",
+  "where": "p2#line1",
+  "columns": [
+   {
+    "key": 89.9,
+    "parts": [
+     "AHK GJ-Beg"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 155.9,
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 221.9,
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 287.9,
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 353.9,
+    "parts": [
+     "Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 419.9,
+    "parts": [
+     "Invest.Förderg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 485.9,
+    "parts": [
+     "aktuelle AHK"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_07",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-06-30",
+  "where": "p2#line2",
+  "columns": [
+   {
+    "key": 94.0,
+    "parts": [
+     "AfA GJ-Beg"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": 160.0,
+    "parts": [
+     "AfA des Jahres"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 221.9,
+    "parts": [
+     "AfA Abgang"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": 287.9,
+    "parts": [
+     "AfA Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 353.9,
+    "parts": [
+     "AfA Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 419.9,
+    "parts": [
+     "Zuschreibungen"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 490.0,
+    "parts": [
+     "kumulierte AfA"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_07",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-06-30",
+  "where": "p2#line3",
+  "columns": [
+   {
+    "key": 89.9,
+    "parts": [
+     "Buchwrt GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 485.9,
+    "parts": [
+     "lfd Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f05_sap_class_gitter_08",
+  "family": "f05",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2#line0",
+  "columns": [
+   {
+    "key": 86.9,
+    "parts": [],
+    "expected": "account",
+    "evidence": "key:account"
+   },
+   {
+    "key": 105.9,
+    "parts": [],
+    "expected": "class_no",
+    "evidence": "key:class_no"
+   },
+   {
+    "key": 185.4,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 233.1,
+    "parts": [],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 284.1,
+    "parts": [],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 386.1,
+    "parts": [],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 437.1,
+    "parts": [],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": 491.5,
+    "parts": [],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": 542.5,
+    "parts": [],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 590.1,
+    "parts": [],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": 641.1,
+    "parts": [],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": 695.5,
+    "parts": [],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": 743.1,
+    "parts": [],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 794.1,
+    "parts": [],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f06_sap_asset_gitter_02",
+  "family": "f06",
+  "source": "xlsx",
+  "where": "Anlagengitter",
+  "period_end": "2025-12-31",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Bilanzposition"
+    ],
+    "expected": "position",
+    "evidence": "manual"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "Bestandskonto"
+    ],
+    "expected": "account",
+    "evidence": "key:account"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Anlagenklasse"
+    ],
+    "expected": "class_no",
+    "evidence": "key:class_no"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anlage"
+    ],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "UNr."
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Anlagenbezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Währg"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Aktivdatum"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "AHK GJ-Beg"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "AfA GJ-Beg"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "Buchwert GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "AfA des Jahres"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "AfA Abgang"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "P",
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "Q",
+    "parts": [
+     "lfd Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "R",
+    "parts": [
+     "aktuelle AHK"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "kumulierte AfA"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   }
+  ]
+ },
+ {
+  "doc": "f06_sap_asset_gitter_07",
+  "family": "f06",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 55.2,
+    "parts": [],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": 75.9,
+    "parts": [],
+    "expected": "sub_no",
+    "evidence": "key:sub_no"
+   },
+   {
+    "key": 173.9,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 212.1,
+    "parts": [],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 263.5,
+    "parts": [],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 314.5,
+    "parts": [],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 365.5,
+    "parts": [],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": 416.5,
+    "parts": [],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 467.5,
+    "parts": [],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": 518.5,
+    "parts": [],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": 569.5,
+    "parts": [],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 620.5,
+    "parts": [],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": 671.5,
+    "parts": [],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": 722.5,
+    "parts": [],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 773.5,
+    "parts": [],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f07_sap_class_summary_01",
+  "family": "f07",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p2",
+  "columns": [
+   {
+    "key": 162.6,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 194.9,
+    "parts": [],
+    "expected": "class_no",
+    "evidence": "key:class_no"
+   },
+   {
+    "key": 274.0,
+    "parts": [],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 431.0,
+    "parts": [],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": 507.0,
+    "parts": [],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 654.0,
+    "parts": [],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": 730.0,
+    "parts": [],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   }
+  ]
+ },
+ {
+  "doc": "f07_sap_class_summary_02",
+  "family": "f07",
+  "source": "xlsx",
+  "where": "Abschreibungen",
+  "period_end": "2025-12-31",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "BilPos"
+    ],
+    "expected": "position",
+    "evidence": "manual"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "Bezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Klasse"
+    ],
+    "expected": "class_no",
+    "evidence": "key:class_no"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "kum AnschWert"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Bew AnschWert"
+    ],
+    "expected": "bew_ahk",
+    "evidence": "key:bew_ahk"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "kum AfA"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "gep AfA"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Bew Wertber"
+    ],
+    "expected": "bew_wb",
+    "evidence": "key:bew_wb"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Ende-Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "Beg-Buchwert"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "Währg"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f07_sap_class_summary_05",
+  "family": "f07",
+  "source": "pdf",
+  "period_end": "2024-12-31",
+  "where": "p2",
+  "columns": [
+   {
+    "key": 162.6,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 194.9,
+    "parts": [],
+    "expected": "class_no",
+    "evidence": "key:class_no"
+   },
+   {
+    "key": 274.0,
+    "parts": [],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 431.0,
+    "parts": [],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": 507.0,
+    "parts": [],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 654.0,
+    "parts": [],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": 730.0,
+    "parts": [],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   }
+  ]
+ },
+ {
+  "doc": "f07_sap_class_summary_06",
+  "family": "f07",
+  "source": "pdf",
+  "period_end": "2025-12-31",
+  "where": "p3",
+  "columns": [
+   {
+    "key": 142.7,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 194.9,
+    "parts": [],
+    "expected": "class_no",
+    "evidence": "key:class_no"
+   },
+   {
+    "key": 274.0,
+    "parts": [],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 431.0,
+    "parts": [],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": 507.0,
+    "parts": [],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 654.0,
+    "parts": [],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": 730.0,
+    "parts": [],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   }
+  ]
+ },
+ {
+  "doc": "f07_sap_class_summary_07",
+  "family": "f07",
+  "source": "pdf",
+  "period_end": "2024-12-31",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 42.9,
+    "parts": [],
+    "expected": "class_no",
+    "evidence": "key:class_no"
+   },
+   {
+    "key": 151.6,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 279.0,
+    "parts": [],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 436.0,
+    "parts": [],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": 512.0,
+    "parts": [],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 659.0,
+    "parts": [],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 735.0,
+    "parts": [],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f08_excel_spiegel_2y_01",
+  "family": "f08",
+  "source": "xlsx",
+  "where": "Tabelle1",
+  "period_end": "2025-12-31",
+  "columns": [
+   {
+    "key": "B",
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "01.01.2025",
+     "EUR"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Umbuchungen",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "31.12.2025",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "01.01.2025",
+     "EUR"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "31.12.2025",
+     "EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "Buchwerte",
+     "31.12.2025",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "P",
+    "parts": [
+     "Buchwerte",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "lt. Bilanz",
+     "(aus Bilanz)",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "T",
+    "parts": [
+     "Differenz",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f08_excel_spiegel_2y_01",
+  "family": "f08",
+  "source": "xlsx",
+  "where": "Tabelle2",
+  "period_end": "2024-12-31",
+  "columns": [
+   {
+    "key": "B",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "01.01.2024",
+     "EUR"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Umbuchungen",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "01.01.2024",
+     "EUR"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "Buchwerte",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "Buchwerte",
+     "31.12.2023",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "R",
+    "parts": [
+     "lt. Bilanz",
+     "(aus Bilanz)",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "Differenz",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f08_excel_spiegel_2y_02",
+  "family": "f08",
+  "source": "pdf",
+  "period_end": "2025-06-30",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 287.6,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "01.07.2024",
+     "EUR"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 325.1,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 359.0,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Abgänge Umbuchungen",
+     "EUR"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": 409.5,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Abgänge Umbuchungen",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 457.5,
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "30.06.2025",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": 500.0,
+    "parts": [
+     "kumulierte Abschreibungen",
+     "01.07.2024",
+     "EUR"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": 533.9,
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 567.8,
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Abgänge 30.06.2025",
+     "EUR"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": 605.4,
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Abgänge 30.06.2025",
+     "EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": 653.3,
+    "parts": [
+     "Buchwerte",
+     "30.06.2025 30.06.2024",
+     "EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 690.8,
+    "parts": [
+     "Buchwerte",
+     "30.06.2025 30.06.2024",
+     "EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 743.8,
+    "parts": [
+     "lt. Bilanz Differenz",
+     "(aus Bilanz)",
+     "EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 776.6,
+    "parts": [
+     "lt. Bilanz Differenz",
+     "(aus Bilanz)",
+     "EUR"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f08_excel_spiegel_2y_05",
+  "family": "f08",
+  "source": "xlsx",
+  "where": "Tabelle1",
+  "period_end": "2025-12-31",
+  "columns": [
+   {
+    "key": "B",
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "01.01.2025",
+     "EUR"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Umbuchungen",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "31.12.2025",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "01.01.2025",
+     "EUR"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "31.12.2025",
+     "EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "Buchwerte",
+     "31.12.2025",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "P",
+    "parts": [
+     "Buchwerte",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "lt. Bilanz",
+     "(aus Bilanz)",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "T",
+    "parts": [
+     "Differenz",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f08_excel_spiegel_2y_05",
+  "family": "f08",
+  "source": "xlsx",
+  "where": "Tabelle2",
+  "period_end": "2024-12-31",
+  "columns": [
+   {
+    "key": "B",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "01.01.2024",
+     "EUR"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Umbuchungen",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "01.01.2024",
+     "EUR"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "Buchwerte",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "Buchwerte",
+     "31.12.2023",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "R",
+    "parts": [
+     "lt. Bilanz",
+     "(aus Bilanz)",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "Differenz",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f08_excel_spiegel_2y_06",
+  "family": "f08",
+  "source": "xlsx",
+  "where": "Tabelle1",
+  "period_end": "2025-06-30",
+  "columns": [
+   {
+    "key": "B",
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "01.07.2024",
+     "EUR"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Umbuchungen",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "30.06.2025",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "01.07.2024",
+     "EUR"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "30.06.2025",
+     "EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "Buchwerte",
+     "30.06.2025",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "P",
+    "parts": [
+     "Buchwerte",
+     "30.06.2024",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "lt. Bilanz",
+     "(aus Bilanz)",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "T",
+    "parts": [
+     "Differenz",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f08_excel_spiegel_2y_06",
+  "family": "f08",
+  "source": "xlsx",
+  "where": "Tabelle2",
+  "period_end": "2024-06-30",
+  "columns": [
+   {
+    "key": "B",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "01.07.2023",
+     "EUR"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Umbuchungen",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "30.06.2024",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "01.07.2023",
+     "EUR"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "30.06.2024",
+     "EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "Buchwerte",
+     "30.06.2024",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "Buchwerte",
+     "30.06.2023",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "R",
+    "parts": [
+     "lt. Bilanz",
+     "(aus Bilanz)",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "Differenz",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f08_excel_spiegel_2y_07",
+  "family": "f08",
+  "source": "xlsx",
+  "where": "Tabelle1",
+  "period_end": "2025-12-31",
+  "columns": [
+   {
+    "key": "B",
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "01.01.2025",
+     "EUR"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Umbuchungen",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Zugänge lt. Entwurf"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "31.12.2025",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "01.01.2025",
+     "EUR"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "31.12.2025",
+     "EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "Buchwerte",
+     "31.12.2025",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "P",
+    "parts": [
+     "Buchwerte",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "lt. Bilanz",
+     "(aus Bilanz)",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "T",
+    "parts": [
+     "Differenz",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f08_excel_spiegel_2y_07",
+  "family": "f08",
+  "source": "xlsx",
+  "where": "Tabelle2",
+  "period_end": "2024-12-31",
+  "columns": [
+   {
+    "key": "B",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "01.01.2024",
+     "EUR"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "Umbuchungen",
+     "EUR"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Anschaffungs- und Herstellungskosten",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "01.01.2024",
+     "EUR"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Zugänge",
+     "EUR"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "Abgänge",
+     "EUR"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "kumulierte Abschreibungen",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "Buchwerte",
+     "31.12.2024",
+     "EUR"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "Buchwerte",
+     "31.12.2023",
+     "EUR"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "R",
+    "parts": [
+     "lt. Bilanz",
+     "(aus Bilanz)",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "Differenz",
+     "EUR"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   }
+  ]
+ },
+ {
+  "doc": "f08_excel_spiegel_2y_08",
+  "family": "f08",
+  "source": "xlsx",
+  "where": "AV-Spiegel",
+  "period_end": "2025-06-30",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Anlagevermögen gesamt"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "1264533.1"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "519986.54"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "66473.54"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "0"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "1718046.1"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "597574.91"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "72783.48"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "24927.58"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "645430.81"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "1072615.29"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "666958.19"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   }
+  ]
+ },
+ {
+  "doc": "f09_excel_register_01",
+  "family": "f09",
+  "source": "xlsx",
+  "where": "Sheet1",
+  "period_end": "2025-06-30",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Anlage"
+    ],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "Unter-nummer"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Aktivierung am"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anlagenbezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Währ-ung"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "AHK GJ-Beg"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "Invest.Förderg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "aktuelle AHK"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "AfA GJ-Beg"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "AfA des Jahres"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "AfA Abgang"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "P",
+    "parts": [
+     "AfA Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "Q",
+    "parts": [
+     "AfA Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "R",
+    "parts": [
+     "Zuschreibungen"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "kumulierte AfA"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "T",
+    "parts": [
+     "Buchwrt GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "U",
+    "parts": [
+     "lfd Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f09_excel_register_01",
+  "family": "f09",
+  "source": "xlsx",
+  "where": "Sheet2",
+  "period_end": "2025-06-30",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Buchungskreis"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "Anlagenklasse"
+    ],
+    "expected": "class_no",
+    "evidence": "manual"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Bezeichnung"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Währ-ung"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "AHK GJ-Beg"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "Invest.Förderg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "SUMME AHK / Zugang / Abgang / Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "aktuelle AHK"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "Differenz zu aktuelle AHK"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "AfA GJ-Beg"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "AfA des Jahres"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "P",
+    "parts": [
+     "AfA Abgang"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "Q",
+    "parts": [
+     "AfA Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "R",
+    "parts": [
+     "AfA Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "Zuschreibungen"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": "T",
+    "parts": [
+     "kumulierte AfA"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "U",
+    "parts": [
+     "Buchwrt GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "V",
+    "parts": [
+     "lfd Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f09_excel_register_02",
+  "family": "f09",
+  "source": "pdf",
+  "period_end": "2025-09-30",
+  "where": "p1",
+  "columns": [
+   {
+    "key": 65.3,
+    "parts": [],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": 95.2,
+    "parts": [
+     "nummer"
+    ],
+    "expected": "sub_no",
+    "evidence": "key:sub_no"
+   },
+   {
+    "key": 140.5,
+    "parts": [
+     "am"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": 238.6,
+    "parts": [],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": 306.4,
+    "parts": [],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": 335.0,
+    "parts": [],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": 365.3,
+    "parts": [],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": 398.0,
+    "parts": [],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": 499.1,
+    "parts": [
+     "AHK"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": 533.5,
+    "parts": [],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": 563.8,
+    "parts": [
+     "Jahres"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": 596.2,
+    "parts": [],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": 628.9,
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": 642.0,
+    "parts": [
+     "Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": 701.4,
+    "parts": [],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": 735.8,
+    "parts": [
+     "AfA"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": 768.5,
+    "parts": [
+     "GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": 801.2,
+    "parts": [
+     "Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f09_excel_register_05",
+  "family": "f09",
+  "source": "xlsx",
+  "where": "Sheet1",
+  "period_end": "2025-06-30",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Anlage"
+    ],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "Unter-nummer"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Aktivierung am"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anlagenbezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Währ-ung"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "AHK GJ-Beg"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "Invest.Förderg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "aktuelle AHK"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "AfA GJ-Beg"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "AfA des Jahres"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "AfA Abgang"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "P",
+    "parts": [
+     "AfA Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "Q",
+    "parts": [
+     "AfA Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "R",
+    "parts": [
+     "Zuschreibungen"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "kumulierte AfA"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "T",
+    "parts": [
+     "Buchwrt GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "U",
+    "parts": [
+     "lfd Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f09_excel_register_05",
+  "family": "f09",
+  "source": "xlsx",
+  "where": "Sheet2",
+  "period_end": "2025-06-30",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Buchungskreis"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "Anlagenklasse"
+    ],
+    "expected": "class_no",
+    "evidence": "manual"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Bezeichnung"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Währ-ung"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "AHK GJ-Beg"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "Invest.Förderg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "SUMME AHK / Zugang / Abgang / Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "aktuelle AHK"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "Differenz zu aktuelle AHK"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "AfA GJ-Beg"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "AfA des Jahres"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "P",
+    "parts": [
+     "AfA Abgang"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "Q",
+    "parts": [
+     "AfA Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "R",
+    "parts": [
+     "AfA Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "Zuschreibungen"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": "T",
+    "parts": [
+     "kumulierte AfA"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "U",
+    "parts": [
+     "Buchwrt GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "V",
+    "parts": [
+     "lfd Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f09_excel_register_06",
+  "family": "f09",
+  "source": "xlsx",
+  "where": "Sheet1",
+  "period_end": "2025-12-31",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Anlage"
+    ],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "Unter-nummer"
+    ],
+    "expected": "sub_no",
+    "evidence": "key:sub_no"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Aktivierung am"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anlagenbezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Währ-ung"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "AHK GJ-Beg"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "Invest.Förderg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "aktuelle AHK"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "AfA GJ-Beg"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "AfA des Jahres"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "AfA Abgang"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "P",
+    "parts": [
+     "AfA Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "Q",
+    "parts": [
+     "AfA Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "R",
+    "parts": [
+     "Zuschreibungen"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "kumulierte AfA"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "T",
+    "parts": [
+     "Buchwrt GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "U",
+    "parts": [
+     "lfd Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f09_excel_register_07",
+  "family": "f09",
+  "source": "xlsx",
+  "where": "Sheet1",
+  "period_end": "2025-06-30",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Anlage"
+    ],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "Unter-nummer"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Aktivierung am"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Anlagenbezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Währ-ung"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "AHK GJ-Beg"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "Invest.Förderg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "aktuelle AHK"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "AfA GJ-Beg"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "AfA des Jahres"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "AfA Abgang"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "P",
+    "parts": [
+     "AfA Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "Q",
+    "parts": [
+     "AfA Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "R",
+    "parts": [
+     "Zuschreibungen"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "kumulierte AfA"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "T",
+    "parts": [
+     "Buchwrt GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "U",
+    "parts": [
+     "lfd Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f09_excel_register_07",
+  "family": "f09",
+  "source": "xlsx",
+  "where": "Sheet2",
+  "period_end": "2025-06-30",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Buchungskreis"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "Anlagenklasse"
+    ],
+    "expected": "class_no",
+    "evidence": "manual"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Bezeichnung"
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Währ-ung"
+    ],
+    "expected": "currency",
+    "evidence": "manual"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "AHK GJ-Beg"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Zugang"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Abgang"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Umbuchung"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "Invest.Förderg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "SUMME AHK / Zugang / Abgang / Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "aktuelle AHK"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "Differenz zu aktuelle AHK"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "AfA GJ-Beg"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "AfA des Jahres"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "P",
+    "parts": [
+     "AfA Abgang"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "Q",
+    "parts": [
+     "AfA Umbuchung"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "R",
+    "parts": [
+     "AfA Nachaktivg"
+    ],
+    "expected": "ignore",
+    "evidence": "manual"
+   },
+   {
+    "key": "S",
+    "parts": [
+     "Zuschreibungen"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": "T",
+    "parts": [
+     "kumulierte AfA"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   },
+   {
+    "key": "U",
+    "parts": [
+     "Buchwrt GJ-Beg"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "V",
+    "parts": [
+     "lfd Buchwert"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   }
+  ]
+ },
+ {
+  "doc": "f09_excel_register_08",
+  "family": "f09",
+  "source": "xlsx",
+  "where": "Anlagen",
+  "period_end": "2025-03-31",
+  "columns": [
+   {
+    "key": "A",
+    "parts": [
+     "Anlagennummer"
+    ],
+    "expected": "asset_no",
+    "evidence": "key:asset_no"
+   },
+   {
+    "key": "B",
+    "parts": [
+     "UNr."
+    ],
+    "expected": "?",
+    "evidence": "manual"
+   },
+   {
+    "key": "C",
+    "parts": [
+     "Bezeichnung"
+    ],
+    "expected": "name",
+    "evidence": "key:name"
+   },
+   {
+    "key": "D",
+    "parts": [
+     "Aktiviert"
+    ],
+    "expected": "acq_date",
+    "evidence": "key:acq_date"
+   },
+   {
+    "key": "E",
+    "parts": [
+     "Restbuchwert Ende"
+    ],
+    "expected": "bw_close",
+    "evidence": "key:bw_close"
+   },
+   {
+    "key": "F",
+    "parts": [
+     "Restbuchwert Beginn"
+    ],
+    "expected": "bw_prev",
+    "evidence": "key:bw_prev"
+   },
+   {
+    "key": "G",
+    "parts": [
+     "Anschaffungswert Beginn"
+    ],
+    "expected": "ahk_open",
+    "evidence": "key:ahk_open"
+   },
+   {
+    "key": "H",
+    "parts": [
+     "Zugänge"
+    ],
+    "expected": "zugang",
+    "evidence": "key:zugang"
+   },
+   {
+    "key": "I",
+    "parts": [
+     "Abgänge"
+    ],
+    "expected": "abgang",
+    "evidence": "key:abgang"
+   },
+   {
+    "key": "J",
+    "parts": [
+     "Umbuchungen"
+    ],
+    "expected": "umbuchung",
+    "evidence": "key:umbuchung"
+   },
+   {
+    "key": "K",
+    "parts": [
+     "Anschaffungswert Ende"
+    ],
+    "expected": "ahk_close",
+    "evidence": "key:ahk_close"
+   },
+   {
+    "key": "L",
+    "parts": [
+     "Abschreibung kum. Beginn"
+    ],
+    "expected": "kum_afa_open",
+    "evidence": "key:kum_afa_open"
+   },
+   {
+    "key": "M",
+    "parts": [
+     "Abschreibung GJ"
+    ],
+    "expected": "afa_gj",
+    "evidence": "key:afa_gj"
+   },
+   {
+    "key": "N",
+    "parts": [
+     "Abschreibung Abgänge"
+    ],
+    "expected": "afa_abgang",
+    "evidence": "key:afa_abgang"
+   },
+   {
+    "key": "O",
+    "parts": [
+     "Zuschreibungen"
+    ],
+    "expected": "zuschreibung",
+    "evidence": "key:zuschreibung"
+   },
+   {
+    "key": "P",
+    "parts": [
+     "Abschreibung kum. Ende"
+    ],
+    "expected": "kum_afa_close",
+    "evidence": "key:kum_afa_close"
+   }
+  ]
+ }
+]

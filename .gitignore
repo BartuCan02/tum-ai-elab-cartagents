@@ -9,3 +9,6 @@ outputs/
 *.log
 .DS_Store
 .env
+/reports/
+/data/
+TUM-ai-Challenge-Brief-*.pdf

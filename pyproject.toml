@@ -7,7 +7,7 @@ name = "carthagents"
 version = "0.1.0"
 description = "Evidence-first German fixed asset schedule extraction"
 requires-python = ">=3.10"
-dependencies = ["PyMuPDF>=1.24", "artifact-tool>=0.1"]
+dependencies = ["PyMuPDF>=1.24", "openpyxl>=3.1", "Pillow>=10", "numpy>=1.26"]
 
 [project.optional-dependencies]
 ocr = ["pytesseract>=0.3.13", "Pillow>=10"]
@@ -15,6 +15,13 @@ dev = ["pytest>=8"]
 
 [project.scripts]
 carthagents = "carthagents.cli:main"
+carthagents-eval = "carthagents.evaluate:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+carthagents = ["resources/*.xlsx"]
